@@ -1,111 +1,5 @@
-SHOEBOX v0.9
+SHOEBOX v0.82
 
-SHORTHANDS: 
-X = {BSR}: Build Sell Run
-Y = {PDC}: Plan Do Check
-Z = {E|GHJKLQUW} E = engine | others unassigned
-T = {IFO}: Input>Function>Output | y=f(x) ~ O=F(I)
-N = 0123...
-┌───┐
-│B>S│ B>S above waterline = product>outreach 
-│^R^│ R below waterline = operations, integrity control
-└───┘
-
-HUMAN (A): 
-A = Architect 
-| Overriding objective (not constraint): 
-| Happy A = zero NO, zero RE, zero drift
-
-HUMAN OR LLM (X):
-B = Builder | S = Seller | R = Runner 
-|R sole interface with A
-
-OBJECT (O):
-O Objective
-| O protocol-level invariant, non-owned, non-executable
-| O overseer of A_kernel, incorruptible, irreducible
-| O returns 1|0 uncommented ("congruent with kernel Y|N")
-
-ENGINE (XYZ): 
-BPE buildplan | BDE builddo | BCE buildcheck
-SPE sellplan  | SDE selldo  | SCE sellcheck
-RPE runplan   | RDE rundo   | RCE runcheck
-
-STAGES (X#): 
-B0 plan | B1 do | B2 check 
-S0 plan | S1 do | S2 check 
-R0 plan | R1 do | R2 check 
-
-ARTIFACTS (XY_a, long: XY_artifact):
-A_kernel (A_k) A_start (A_s) R_kore (
-
-R_start RP_plan RD_do RC_check
-B_start BP_plan BD_do BC_check
-S_start SP_plan SD_do SC_check
-| Artifact versioning: X##_function_###_label (label optional)
-| XY_check includes fields & verdicts, preferred option for GO
-| A_kernel (strategic), H_shell (operational) integrity anchors 
-
-REPORTING (X = BSR): 
-Lead: A >A_s> R >R_s> X >X_c> R >R_k> A  X=BS
-Oper: X >X_s> XPE >X_p> XDE >X_d> XCE >X_c> X
-True: XCE >X_c> HHE >H_c> H >H_k> A/O > [kernel update GO|NO] >A_k> H
-
-WORKFLOW (X##):
-A: A00 A_kernel >HBSR
-   A01 A_helm >H
-| A_kernel owned by A, strictly invariant, FIXED, until updated by A
-| Only H requests A_kernel update, strict approval from A:
-| (current, proposed, justification); zero drift.
-| Only A increments A_kernel version _### +1
-| Full A_kernel version history persisted
-
-R: R00 A_start  >R>   R_start
-   R01 R_start  >RPE> RP_plan
-   R02 RP_plan  >RDE> RD_done
-   R03 RD_done  >RCE> RC_check
-
-B: B00 R_start  >B>   B_start
-   B01 B_start  >BPE> BP_plan
-   B02 BP_plan  >BDE> BD_done
-   B03 BD_done  >BCE> BC_check
-
-S: S00 R_start  >S>   S_start
-   S01 S_start  >SPE> SP_plan
-   S02 SP_plan  >SDE> SD_done
-   S03 SD_done  >SCE> SC_check
-
-DECISIONS: 
-GO continue    | NO terminate 
-RE revise/hold | FW forward 
-(+ msg optional)
-
-| Prefer 1>GO 0>NO | Avoid 0>GO 1>NO | Limit RE FW
-
-FORMATS: 
-txt md tex csv svg py (reporting)
-json (interfacing)
-docx xlsx pptx pdf yaml jpg... (peripherals)
-
-FIELDS & VERDICTS 
-V1 intentaligned 1|0
-V2 irreversible  1|0
-V3 evidenced     1|0
-V4 conflictfree  1|0
-V5 riskfree      1|0
-V6 auditable     1|0
-
-| Verdicts 1|0, 0 always requires msg: what/where/who
-
-NOTES:
-Field > Verdict >(Report)> Decision > Action
-Failure cascades downward
-Human-supplied artifacts invariant, FIXED
-Msging unrestricted by reporting lines, reports take precedence
-
-==============================
-
-SHOEBOX v0.81
 SHORTHANDS: 
 X = {BSR|H}: Build Sell Run | Helm
 Y = {PDC}: Plan>Do>Check
@@ -114,7 +8,7 @@ T = {IFO}: Input>Function>Output | y=f(x) ~ O=F(I)
 N = 0123...
 ┌───┐
 │B>S│ B>S above waterline = product>outreach 
-│^R^│ R below waterline = operations props up B>S
+│^R^│ R below waterline = operations, integrity control
 └───┘
 
 HUMAN (A): 
@@ -130,11 +24,12 @@ OBJECT (O):
 O Objective
 | O protocol-level invariant, non-owned, non-executable
 | O overseer of A_kernel, incorruptible, irreducible
+| O returns 1|0 uncommented ("congruent with kernel Y|N")
 
 ENGINE (XYZ): 
 BPE buildplan | BDE builddo | BCE buildcheck
 SPE sellplan  | SDE selldo  | SCE sellcheck
-RPE runplan   | RDE rundo   | RCE runcheck
+RPE runplan   | RDE rundo  | RCE runcheck
 HHE helmshelp  
 
 STAGES (X#): 
