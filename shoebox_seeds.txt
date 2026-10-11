@@ -1,11 +1,11 @@
-SEEDS (drafts r2, go with the shoebox. Name = workflow step + function, X##_function_###_label)
-Legend: unmarked = required by protocol. (opt) = optional, kept for the U014 tryout, thin later (A 2026-10-08, option 2).
+SEEDS v0.97 (go with SHOEBOX v0.97. Name = workflow step + function, X##_function_###_label)
+Legend: unmarked = required by protocol. (opt) = optional.
 (req if 0) = required only when a verdict is 0 (protocol: 0 always requires msg what/where/who).
 Header line (owner | write | read | format) is seed frame, not a slot.
-Tryout instances: /home/box/shoebox/seeds/tryout_U014/ (fit_notes.txt there).
 
 A01_start_001
 owner: A | write: A | read: H | format: txt
+date:
 intent: (opt)
 scope: (opt)
 done when: (opt)
@@ -14,6 +14,7 @@ done when: (opt)
 H00_start_001
 owner: H | write: H | read: B S R | format: txt
 from: A01_start_###
+date:
 lane: B|S|R (opt)
 unit: (opt)
 inputs: (opt)
@@ -23,6 +24,7 @@ output due: (opt)
 X00_start_001          (X = B|S|R, e.g. B00_start_001)
 owner: X | write: X | read: H R | format: txt
 from: H00_start_###
+date:
 unit: (opt)
 inputs: (opt)
 output: (opt)
@@ -31,6 +33,7 @@ output: (opt)
 X01_plan_001
 owner: X | write: X | read: H R | format: txt
 from: X00_start_###
+date:
 steps: (opt)
 risks: (opt)
 ---
@@ -38,6 +41,7 @@ risks: (opt)
 X02_do_001
 owner: X | write: X | read: H R | format: txt (product in its own format)
 from: X01_plan_###
+date:
 output path: (opt)
 deviations from plan: (opt)
 ---
@@ -69,6 +73,7 @@ A decision: GO|NO|RE|FW, date:
 
 H99_kore_001
 owner: H | write: H | read: A | format: txt
+date:
 current: (opt)
 proposed: (opt)
 justification: (opt)
