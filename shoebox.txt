@@ -1,4 +1,4 @@
-SHOEBOX v0.95
+SHOEBOX v0.96
 SHORTHANDS:
 X = {BSR|H}: Build Ship Run | Helm
 Y = {PDC}: Plan>Do>Check
@@ -30,6 +30,8 @@ BPE buildplan | BDE builddo | BCE buildcheck
 SPE shipplan  | SDE shipdo  | SCE shipcheck
 RPE runplan   | RDE rundo   | RCE runcheck
 HHE helmshelp
+| H BSR permanent; engines ad hoc: up per task, down on signoff or replaced
+| X owns domain, engines do the work; never one agent for P D C of same work
 
 STAGES (X#):
 B0 plan | B1 do | B2 check
