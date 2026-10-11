@@ -1,37 +1,27 @@
-pricingtech_audit | artifact (unowned) | top-append-only, newest first | entry: YYYY-MM-DD HH:MM | writer | ...
-note: run entries seeded by H 2026-10-11 from archived checks; source files carry dates only, so time is --:-- and order follows pinned version.
+pricingtech_audit | integrity report: compliance of baseline with guideline | top-append-only | each entry: YYYY-MM-DD HH:MM | writer | requirement | baseline version | 1|0 | evidence | if 0: what/where/who
 ---
-2026-10-11 18:27 | H | guideline v002: A structure FIXED (18x4 grid); proposal_002 superseded
-2026-10-11 18:20 | H | restructure into bookfactory/pricingtech; guideline DRAFT v001; baseline = v025
-2026-10-11 --:-- | S | S03_check_010 pin v025 (f5fcd6d5) | GO V1-V6 1 | pack restores L2790 T'61 sentence, L2756 end product; excludes "and neither defense applies" (T'62)
-2026-10-11 --:-- | R | R03_check_012 pin v025 (f5fcd6d5) | GO | T'61 applied; S18.2 FC1 RC1; 0 Contested/Unresolved/Implausible; optional T'62 (third defense)
-2026-10-11 --:-- | R | R03_check_011 pin v024 (57d47b27) | GO, T'61 to B | T'56-T'60 applied; R's own T'60 misstated Robinson-Patman test and defenses (1 Implausible)
-2026-10-11 --:-- | S | S03_check_009 pin v023 (993c940e) | GO V1-V6 1 | 18.2 law passages restored; T'60, T'58 clauses excluded
-2026-10-11 --:-- | R | R03_check_010 pin v023 (993c940e) | GO | T'44-T'48, T'53-T'55 applied; 18.2.C1 cleared; T'56-T'60 routed
-2026-10-11 --:-- | R | R03_check_009 pin v022 (4aea7c42) | GO | Ch17, Ch18, Epilogue RC1; 1 Implausible 18.2.C1; legal exactness T'44-T'48 to B; integrity T'49-T'52 to A
-2026-10-11 --:-- | S | S03_check_008 pin v022 (4aea7c42) | GO V1-V6 1 | T'38-T'41 restored; 18.2 law passages excluded pending R
-2026-10-11 --:-- | H | H01_check_010 latest v022, R-cleared v019 | A decision pending (rides with 009) | B blocked on A for Ch1
-2026-10-11 --:-- | H | H01_check_009 R-cleared v019 | A decision pending | asks a-g: title period, F independence, A01_start, duplicate titles, modern usage, Ch1 release, integrity sentence; supersedes 004/007/008
-2026-10-11 --:-- | R | R03_check_008 pin v019 (b720302e) | GO | T'33-T'37 applied; Ch15-16 0 Contested/Unresolved/Implausible; integrity candidate verified, variants flagged T'42/T'43
-2026-10-11 --:-- | S | S03_check_007 pin v019 (b720302e) | GO V1-V6 1 | T'33, T'35 restored; Ch8/Ch13 integrity credits excluded
-2026-10-11 --:-- | H | H01_check_008 latest v019, R-cleared v017 | A ask 004 open | integrity candidate surfaced
-2026-10-11 --:-- | R | R03_check_007 pin v017 (8fa5ab4c) | GO | Ch13-14 clean; integrity attribution inconsistent (T'35/T'36)
-2026-10-11 --:-- | S | S03_check_006 pin v017 (8fa5ab4c) | GO V1-V6 1 | T'29 restored; T'33/T'35/T'36 clauses excluded
-2026-10-11 --:-- | H | H01_check_007 latest v017, R-cleared v015 | A ask 004 open | lane progress only
-2026-10-11 --:-- | R | R03_check_006 pin v015 (69e375fe) | GO | T'20-T'28 applied; Ch11-12 clean; Part II RC1
-2026-10-11 --:-- | S | S03_check_005 pin v015 (69e375fe) | GO V1-V6 1 | 7.3, 9.2 Pigou, 9.3, 10.4 restored; T'29 clause excluded
-2026-10-11 --:-- | H | H01_check_006 latest v015, R-cleared v013 | A ask 004 open | lane progress only
-2026-10-11 --:-- | R | R03_check_005 pin v013 (e5622af2) | GO | T'16 half-supported (R's own wording) -> T'20; T'17 withdrawn; 9.2.C1 Pigou Implausible -> T'22
-2026-10-11 --:-- | S | S03_check_004 pin v013 (e5622af2) | GO V1-V6 1 | flagged 7.3, 9.2, 9.3, 10.4 lines excluded
-2026-10-11 --:-- | H | H01_check_005 latest v013, R-cleared v011 | A ask 004 open | lane progress only
-2026-10-11 --:-- | R | R03_check_004 pin v011 (0985a6df) | GO | Ch7-8 clean; T'14-T'19 advisories (Ch7 misattributions, Karush, Kerr)
-2026-10-11 --:-- | S | S03_check_003 pin v011 (0985a6df) | GO V1-V6 1 | T'14-T'16 lines excluded; 8.4/16.3 cited by number only
-2026-10-11 --:-- | H | H01_check_004 latest v011, R-cleared v009 | A decision pending | asks a-d; supersedes 002/003
-2026-10-11 --:-- | R | R03_check_003 pin v009 (6742c391) | GO | T'5-T'9 applied; 33 subhead renames; duplicate section titles advisory
-2026-10-11 --:-- | S | S03_check_002 pin v009 (6742c391) | GO V1-V6 1 | 3.4.C1, 4.3.C3 restored; S5-S6 added
-2026-10-11 --:-- | H | H01_check_003 latest v009, R-cleared v006 | H GO on S03_check_001; A ask 002 open | pack prep only
-2026-10-10 --:-- | S | S03_check_001 pin v006 (e450d8ca) | GO V1-V6 1 | first pack; 3.4.C1, 4.3.C3 excluded
-2026-10-10 --:-- | H | H01_check_002 R-cleared v006 | A decision pending | asks: title period, F independence, A01_start
-2026-10-10 --:-- | R | R03_check_002 pin v006 (e450d8ca) | GO | 2 Implausible non-blocking (3.4.C1 Dupuit/Marshall, 4.3.C3 Caillaud & Jullien) -> T'5/T'6
-2026-10-10 --:-- | H | H01_check_001 latest v006 | plan checks B01 GO, R01 GO, S01_001 RE, S01_002 GO | V4/V5 0s open from R03_check_001
-2026-10-10 --:-- | R | R03_check_001 pin v003 (234ad8ff) | RE | V4/V5 0: Contested 2.2.C1 (Information Rules inverted), Ch18 intro meta text -> T'2/T'3
+2026-10-11 21:25 | H | recast as integrity report per A; activity entries moved to pricingtech_reports.txt; no compliance verdicts yet (baseline to be rebuilt against guideline)
+---
+REQUIREMENTS (from pricingtech_guideline; status: not yet audited (baseline rebuild pending A))
+STRUCTURE  S1 book intro, Parts I-III, epilogue; intros for book, parts, chapters
+           S2 18 chapters x 4 sections match A grid (titles, order)
+           S3 2-4 unnumbered subsections per section, ~300 words each
+           S4 section 600-1200 words, 1-2 illustrations, no footnotes
+           S5 title diction (book, part, chapter, section lengths; no sprawl); title without period (OPEN A)
+CONTENT    C1 arc Strategy > Policy > Engine (founder-led > formal policy > autonomous engine)
+           C2 end product: pricing engine as defined
+           C3 integrity frame (efficiency, accountability), not ethics
+           C4 bounded rationality via Carnegie School; behavioralism minimal; ML as organizational learning
+           C5 core topic digital goods; bookshelf sources
+CONTINUITY K1 explicit boundaries and named cross-references
+           K2 each intro stands alone
+           K3 integrity sentence form and use (OPEN A); modern usage notes
+TONE       T1 American English, third person, Simon/Arrow diction
+           T2 minimal notation; point survives skipping equations
+           T3 no forbidden register (TONE list)
+AUDIENCE   U1 founders; assumed and not-assumed knowledge respected
+           U2 goal: rigor above MBA/SV, methods introduced, external pointers
+EVIDENCE   E1 factcheck per protocol, independent factcheckers (OPEN A)
+           E2 no Contested without A override; flags resolved or marked
+           E3 quotes verbatim; no overstated confidence
+           E4 order: self-check > factcheck > continuity > promote; final proof lock

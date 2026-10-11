@@ -1,0 +1,119 @@
+pricingtech_reports | all lane reports (starts, plans, checks) | newest first
+note: S02_do_010_pack.txt (premature stage-3 variant product, not a report) moved to /home/box/archive/shoebox_2026-10-11_superseded/. Source report files archived there; full text preserved.
+FIXED inputs of the run (A, archived): Pricing_Tech_guideline_FIXED, REGISTER_FIXED, TITLE_DICTION_FIXED, FACTCHECK_PROTOCOL_FIXED; now consolidated in pricingtech_guideline.txt.
+---
+R03_check_012_pricing_tech | 2026-10-11 | pinned v025 f5fcd6d5
+checks R02_do_012. V1 scope T'61 only 1 | V2 sources named; F1-F3 R's own passes, provisional pending A 1 | V3 FC gate 0 Contested/Unresolved/Implausible (L2789 flag cleared) 1 | V4 S18.2 RC1 1 | V5 cites by quote + grep-verified line L2790 1 | V6 no overwrite, no B edits, no messages, A holds unchanged 1.
+optional: T'62 (non-exhaustive defenses, L2790). integrity T'42/T'43/T'49-T'52 with A.
+decision: GO
+---
+R02_do_012_pricing_tech | 2026-10-11 | pinned v025 f5fcd6d5
+plan R01_plan_001; prior R02_do_011/R03_check_011. scope T'61 (changelog L87). F1 15 USC 13(a)/(b) text; F2 case law (Morton Salt 1948, Standard Oil 1951, Anheuser-Busch 1960); F3 reference/logic/flow; R's own passes, not independent.
+lines: paragraph now L2790 (+1 vs v024); 9.2 L1568; Ch9 L1515.
+T'61: v025 L2790 word for word = proposal. antecedents resolve ("neither defense" = cost justification, good-faith meeting competition; "one of those ways" = three effect forms; number agreement fixed).
+legal: definition correct (Anheuser-Busch); "may be" correct (13(a), Morton Salt); defenses correct (13(a) cost proviso; 13(b), Standard Oil). residual: 13(a) changing-conditions proviso often counted as third defense; "neither defense applies" reads exhaustive -> Interpretative(Plausible), non-blocking. prior Implausible flag cleared.
+cross-ref "Discrimination in Segmentation" = 9.2 in Ch9; Pigou content consistent. flow logical, no redundancy, no REGISTER hits, consistent with 9.2 and Ch18 intro. RC 1.
+T'62 (optional) L2790: "and neither defense applies." -> "and no statutory defense, such as those two, applies." or leave (L2788 disclaims legal guidance).
+S18.2: FC 1 (Plausible 1), RC 1. rest carries from R03_check_011; integrity T'42/T'43/T'49-T'52 with A; no-period title kept.
+---
+S03_check_010_pricing_tech | 2026-10-11 | pinned v025 f5fcd6d5
+checks S02_do_010_pack (archived). V1 intentaligned 1 | V2 irreversible 1 | V3 evidenced 1 | V4 conflictfree 1 | V5 riskfree 1 | V6 auditable 1. 0s: none.
+- pin re-verified, matches H; cleared by R03_check_012 GO. S02_do_001-009 unchanged.
+- restored (v025 wording): L2790 second price-discrimination sentence (T'60/T'61); L2756 "the engine as end product under inheritance" (T'58), Ch18 intro abstract.
+- picked up: T'56 DMA (L2792); T'57 Art. 101 triple + Sherman s.1 (L2798). T'59 (L2736) no pack effect.
+- excluded: L2790 "and neither defense applies" (T'62, Plausible).
+- diff v023->v025: only L2736, L2756, L2790, L2792, L2798 + selfcheck; 0 unmapped cites. trace: 443 spans, 0 bad. register: 0 banned hits; "Destination" only as 18.4 title/subheads, "Journey" only book-intro subhead.
+- 12,416 words. prep only; irreversible_send none.
+- held with A: FC placement, Ch1 sections, "Pricing Tech." period, duplicate section titles, integrity form (T'42/T'43, T'49-T'52).
+options: 1 GO, accept as prep; if T'62 applied and R-cleared, add clause. 2 RE.
+decision: GO
+---
+H01_check_010_pricing_tech | 2026-10-11 | pinned v022 4aea7c42 (R-cleared v019)
+from: S03_check_007; B02_do_020-022 selfchecks; R03_check_009 not filed; B03_check not filed (after Ch1 release). A ask on H01_check_009 (a-g) open; carries unchanged.
+state: v022 = 22 intros, Ch2-Ch18 sections (68/72; Ch1 held L519-L528), Epilogue L2829 (831 w); 0 "Pricing Tech."; register hits in body 0. sha v020 d4041072, v021 d20400f0, v022 4aea7c42.
+not yet R-checked: T'38-T'41; 17.4 Klein (2007) credit; Ch17 (14 claims); Ch18 (13 claims incl. Robinson-Patman, Art. 101/102 TFEU, DMA Art. 5(3), RealPage Aug 2024, Omnibus 2019/2161, GDPR Art. 22); Epilogue (Simon 1947, Arrow 1974); integrity sentence uses.
+B selfchecks 020-022: 9 units in band (818-882), 3 subs each, register 0, subheads unique. S pack S02_do_007 from v019, prep only, 10,629 w.
+S03_check_007: V1-V6 1, GO; H GO (prep only, no send without A GO).
+open 0s: none. notes: V4 R: 18.4 title "Destination" vs REGISTER, R checks; if it trips, joins A item d. V1 B: Epilogue before Ch1, accepted; Ch1 continuity pass re-reads it. V3 R: T'40 Ch8 credit vs R03_check_008 and L352.
+held with A: FC placement; A_kernel; Ch1 hold; integrity sentence (T'42/T'43); duplicate titles. f1 condition met: B blocked on A.
+lanes: B blocked (f, g); R next delta FC/RC on v022 (R02_do_009/R03_check_009), woken; S idle until R03_check_009 GO.
+options: 1 GO H01_check_009 option 1 (a1-g1), releases Ch1. 2 RE.
+A decision: pending
+---
+S01_plan_002_pricing_tech | 2026-10-10 | pinned none (source = latest R03_check-GO B02_do; none cleared at plan date)
+changelog: 001 initial; 002 H RE: source = latest R-cleared version, not latest B; S02 header records B version + R check; "sell" -> "ship".
+objective: one project-wide ship pack from latest R-cleared manuscript; prep only.
+product: S02_do_###_pack.txt, one file, versioned, header records source version + clearing R03_check.
+contents: book blurb (2 par) + abstract; part abstracts; chapter abstracts + talk-track teaser (cue + 2 points, draft); sections added when filled; every claim cites manuscript location.
+steps: 1 find highest R-cleared version; 2 book/part intros; 3 Ch1-18 intros (Ch1 from intro only); 4 register pass (no period, no slop); 5 trace pass; 6 S03_check V1-V6.
+handoff: rebuild affected entries on each newer R-cleared version; archive packs reference only.
+risks: stale/uncleared source (U008); archive voice; overclaiming beyond intros; teaser read as sendable (all marked draft).
+done when: pack covers 22 intros from latest R-cleared version, passes register + trace, S03_check all V = 1.
+---
+S00_start_001_pricing_tech | 2026-10-10 | pinned latest B02_do at build (then v002)
+from H00_start_001. unit: whole project, one versioned file per S step. inputs: guideline, REGISTER, TITLE_DICTION (FIXED); archive sell packs reference only.
+output on H GO: S01_plan, S02_do, S03_check. held with A: FC placement, A_kernel, Ch1, any publish. S never writes manuscript.
+---
+R01_plan_001_pricing_tech | 2026-10-10 | pinned v002 (or newest B02_do, recorded in R02_do)
+objective: project-wide continuity + factcheck (Lector + Editor) on latest manuscript; per-unit FC/RC; one R03 check to H; corrections to B via H.
+units: 22 intros, cited by header + line range; Lector segments ~300 words. sections/epilogue/Ch1 out of scope until delivered.
+checks: continuity C1-C10 (structure_slot, goal_alignment, audience_fit, diction, integrity_frame, rationality_frame, form, claim_consistency, bookshelf_hygiene, version_graph) + cross-unit (hand-offs, arcs, titles, no contradictions). factcheck per protocol, panel 3 default (2 short, up to 5 claim-dense).
+carried: Boundary sentences in Ch11, Ch12, Ch14, Ch15, Ch17 intros each adjudicated explicitly.
+gates per protocol; FC before RC per unit; FC placement held with A.
+outputs: R02_do (segments, panel, FC, C1-C10, RC, corrections), R03_check (V1-V6, options, decision).
+risks: version moves (pin, re-run changed units); hallucinated sources (identifiable sources, C9); Contested stall (block unit only); Boundary drift (C8).
+done when: 22 units have FC and RC; R03_check filed.
+---
+R00_start_001_pricing_tech | 2026-10-10 | pinned v002
+from H00_start_001. unit: whole project; continuity + factcheck of current manuscript. inputs: four FIXED files; archive reference only.
+note: Boundary sentences in Ch11, Ch12, Ch14, Ch15, Ch17 intros need factcheck. held with A: FC placement, A_kernel, Ch1. R does not write prose, ship, or update A_kernel; communicates via H only.
+---
+B01_plan_001_pricing_tech | 2026-10-10 | pinned none (product B02_do_001)
+objective: one manuscript meeting guideline, REGISTER, TITLE_DICTION.
+structure: book intro; 3 parts with intros; 18 one-word chapters with intros; 72 sections 600-1200 w, 2-4 unnumbered subsections; epilogue.
+steps: 1 skeleton from section_titles_proposal_002 (diction re-checked); 2 22 intros re-derived from archive U001-U022, period residues fixed; 3 sections Part I>II>III, chapter at a time; Ch1 skipped until A releases; 4 epilogue last; 5 self-check per chapter (band, register, diction, claims list); 6 B03_check V1-V6.
+handoff: version bump per chapter; R reads in place; FC order held with A.
+risks: register drift; archive voice; single-file size (~80k w); Ch1 hold vs Part I continuity; sourcing.
+done when: all headers, 22 intros, 72 sections (Ch1 per A), epilogue in band; B03_check GO all V = 1.
+---
+B00_start_001_pricing_tech | 2026-10-10 | pinned none
+from H00_start_001. unit: whole manuscript, one versioned B02_do file revised by version bump. inputs: four FIXED files; archive intros, section_titles_proposal_002, outlines reference only. output: B01_plan, B02_do, B03_check. held with A: FC placement, A_kernel, Ch1.
+---
+H00_start_001_pricing_tech | 2026-10-10 | pinned none
+from: no A01_start; A FIXED anchors stand in. rulebook SHOEBOX_v0.95 + seeds. workpiece Pricing Tech (no period). lanes B, S, R; unit whole project. inputs: four FIXED files (archived 2026-10-10). output: B00, S00, R00 starts. held with A: FC placement, A_kernel, Ch1 hold.
+---
+ACTIVITY LOG (from former audit trail)
+2026-10-11 18:27 | H | guideline v002: A structure FIXED (18x4 grid); proposal_002 superseded
+2026-10-11 18:20 | H | restructure into bookfactory/pricingtech; guideline DRAFT v001; baseline = v025
+2026-10-11 --:-- | S | S03_check_010 pin v025 (f5fcd6d5) | GO V1-V6 1 | pack restores L2790 T'61 sentence, L2756 end product; excludes "and neither defense applies" (T'62)
+2026-10-11 --:-- | R | R03_check_012 pin v025 (f5fcd6d5) | GO | T'61 applied; S18.2 FC1 RC1; 0 Contested/Unresolved/Implausible; optional T'62 (third defense)
+2026-10-11 --:-- | R | R03_check_011 pin v024 (57d47b27) | GO, T'61 to B | T'56-T'60 applied; R's own T'60 misstated Robinson-Patman test and defenses (1 Implausible)
+2026-10-11 --:-- | S | S03_check_009 pin v023 (993c940e) | GO V1-V6 1 | 18.2 law passages restored; T'60, T'58 clauses excluded
+2026-10-11 --:-- | R | R03_check_010 pin v023 (993c940e) | GO | T'44-T'48, T'53-T'55 applied; 18.2.C1 cleared; T'56-T'60 routed
+2026-10-11 --:-- | R | R03_check_009 pin v022 (4aea7c42) | GO | Ch17, Ch18, Epilogue RC1; 1 Implausible 18.2.C1; legal exactness T'44-T'48 to B; integrity T'49-T'52 to A
+2026-10-11 --:-- | S | S03_check_008 pin v022 (4aea7c42) | GO V1-V6 1 | T'38-T'41 restored; 18.2 law passages excluded pending R
+2026-10-11 --:-- | H | H01_check_010 latest v022, R-cleared v019 | A decision pending (rides with 009) | B blocked on A for Ch1
+2026-10-11 --:-- | H | H01_check_009 R-cleared v019 | A decision pending | asks a-g: title period, F independence, A01_start, duplicate titles, modern usage, Ch1 release, integrity sentence; supersedes 004/007/008
+2026-10-11 --:-- | R | R03_check_008 pin v019 (b720302e) | GO | T'33-T'37 applied; Ch15-16 0 Contested/Unresolved/Implausible; integrity candidate verified, variants flagged T'42/T'43
+2026-10-11 --:-- | S | S03_check_007 pin v019 (b720302e) | GO V1-V6 1 | T'33, T'35 restored; Ch8/Ch13 integrity credits excluded
+2026-10-11 --:-- | H | H01_check_008 latest v019, R-cleared v017 | A ask 004 open | integrity candidate surfaced
+2026-10-11 --:-- | R | R03_check_007 pin v017 (8fa5ab4c) | GO | Ch13-14 clean; integrity attribution inconsistent (T'35/T'36)
+2026-10-11 --:-- | S | S03_check_006 pin v017 (8fa5ab4c) | GO V1-V6 1 | T'29 restored; T'33/T'35/T'36 clauses excluded
+2026-10-11 --:-- | H | H01_check_007 latest v017, R-cleared v015 | A ask 004 open | lane progress only
+2026-10-11 --:-- | R | R03_check_006 pin v015 (69e375fe) | GO | T'20-T'28 applied; Ch11-12 clean; Part II RC1
+2026-10-11 --:-- | S | S03_check_005 pin v015 (69e375fe) | GO V1-V6 1 | 7.3, 9.2 Pigou, 9.3, 10.4 restored; T'29 clause excluded
+2026-10-11 --:-- | H | H01_check_006 latest v015, R-cleared v013 | A ask 004 open | lane progress only
+2026-10-11 --:-- | R | R03_check_005 pin v013 (e5622af2) | GO | T'16 half-supported (R's own wording) -> T'20; T'17 withdrawn; 9.2.C1 Pigou Implausible -> T'22
+2026-10-11 --:-- | S | S03_check_004 pin v013 (e5622af2) | GO V1-V6 1 | flagged 7.3, 9.2, 9.3, 10.4 lines excluded
+2026-10-11 --:-- | H | H01_check_005 latest v013, R-cleared v011 | A ask 004 open | lane progress only
+2026-10-11 --:-- | R | R03_check_004 pin v011 (0985a6df) | GO | Ch7-8 clean; T'14-T'19 advisories (Ch7 misattributions, Karush, Kerr)
+2026-10-11 --:-- | S | S03_check_003 pin v011 (0985a6df) | GO V1-V6 1 | T'14-T'16 lines excluded; 8.4/16.3 cited by number only
+2026-10-11 --:-- | H | H01_check_004 latest v011, R-cleared v009 | A decision pending | asks a-d; supersedes 002/003
+2026-10-11 --:-- | R | R03_check_003 pin v009 (6742c391) | GO | T'5-T'9 applied; 33 subhead renames; duplicate section titles advisory
+2026-10-11 --:-- | S | S03_check_002 pin v009 (6742c391) | GO V1-V6 1 | 3.4.C1, 4.3.C3 restored; S5-S6 added
+2026-10-11 --:-- | H | H01_check_003 latest v009, R-cleared v006 | H GO on S03_check_001; A ask 002 open | pack prep only
+2026-10-10 --:-- | S | S03_check_001 pin v006 (e450d8ca) | GO V1-V6 1 | first pack; 3.4.C1, 4.3.C3 excluded
+2026-10-10 --:-- | H | H01_check_002 R-cleared v006 | A decision pending | asks: title period, F independence, A01_start
+2026-10-10 --:-- | R | R03_check_002 pin v006 (e450d8ca) | GO | 2 Implausible non-blocking (3.4.C1 Dupuit/Marshall, 4.3.C3 Caillaud & Jullien) -> T'5/T'6
+2026-10-10 --:-- | H | H01_check_001 latest v006 | plan checks B01 GO, R01 GO, S01_001 RE, S01_002 GO | V4/V5 0s open from R03_check_001
+2026-10-10 --:-- | R | R03_check_001 pin v003 (234ad8ff) | RE | V4/V5 0: Contested 2.2.C1 (Information Rules inverted), Ch18 intro meta text -> T'2/T'3

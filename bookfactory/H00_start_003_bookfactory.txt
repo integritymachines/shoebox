@@ -2,7 +2,7 @@ H00_start_003_bookfactory
 owner: H | write: H | read: B S R | format: txt
 date: 2026-10-11
 from: A01_start_### (none yet; A FIXED anchors stand in)
-changelog: 003 FILES updated to bookfactory/<book> layout, A_START line added (2026-10-11); 003 rewritten on A frame (parts, stages, documents, engines, parsimony); 002 archived
+changelog: 003 FILES: four files per book, reports one file, audit = integrity report (A GO 2026-10-11); 003 FILES updated to bookfactory/<book> layout, A_START line added (2026-10-11); 003 rewritten on A frame (parts, stages, documents, engines, parsimony); 002 archived
 ---
 PRINCIPLE  parsimony: minimal files, version control, attribution; every expression irreducible.
 
@@ -25,6 +25,5 @@ ENGINES    BPE research    BDE draft, write    BCE self-check
 
 FILES      shoebox/: SHOEBOX rulebook + seeds, H_notestoself
            bookfactory/: this start (repeatable for any book)
-           bookfactory/<book>/: <book>_guideline, <book>_baseline, <book>_audit (unowned artifacts, versioned in place;
-           audit top-append-only, each entry dated and attributed) + latest lane reports only; superseded to archive
+           bookfactory/<book>/: per book, four files: guideline, baseline, reports (all lane reports, one file), audit (integrity report: compliance with guideline)
 A_START    anything from 'write a book about X' to a full guideline; H fills the blanks

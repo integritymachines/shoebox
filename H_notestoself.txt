@@ -13,3 +13,4 @@ COMMUNICATION (A 2026-10-11; v0.97 basis)
 
 SCOPE (A 2026-10-11)
 - Operational environment (scheduling, wakes) is not shoebox content.
+- Reports: one all-purpose file per book; audit trail = integrity report (compliance), not activity (A 2026-10-11).
