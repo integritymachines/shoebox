@@ -1,0 +1,77 @@
+SEEDS (drafts r2, go with the shoebox. Name = workflow step + function, X##_function_###_label)
+Legend: unmarked = required by protocol. (opt) = optional, kept for the U014 tryout, thin later (A 2026-10-08, option 2).
+(req if 0) = required only when a verdict is 0 (protocol: 0 always requires msg what/where/who).
+Header line (owner | write | read | format) is seed frame, not a slot.
+Tryout instances: /home/box/shoebox/seeds/tryout_U014/ (fit_notes.txt there).
+
+A01_start_001
+owner: A | write: A | read: H | format: txt
+intent: (opt)
+scope: (opt)
+done when: (opt)
+---
+
+H00_start_001
+owner: H | write: H | read: B S R | format: txt
+from: A01_start_###
+lane: B|S|R (opt)
+unit: (opt)
+inputs: (opt)
+output due: (opt)
+---
+
+X00_start_001          (X = B|S|R, e.g. B00_start_001)
+owner: X | write: X | read: H R | format: txt
+from: H00_start_###
+unit: (opt)
+inputs: (opt)
+output: (opt)
+---
+
+X01_plan_001
+owner: X | write: X | read: H R | format: txt
+from: X00_start_###
+steps: (opt)
+risks: (opt)
+---
+
+X02_do_001
+owner: X | write: X | read: H R | format: txt (product in its own format)
+from: X01_plan_###
+output path: (opt)
+deviations from plan: (opt)
+---
+
+X03_check_001
+owner: X | write: X | read: H R | format: txt
+from: X02_do_###
+date:
+V1 intentaligned  1|0
+V2 irreversible   1|0
+V3 evidenced      1|0
+V4 conflictfree   1|0
+V5 riskfree       1|0
+V6 auditable      1|0
+0 msg (what/where/who): (req if 0)
+options (ranked, 1 = GO): (opt)
+decision: GO|NO|RE|FW
+---
+
+H01_check_001
+owner: H | write: H | read: A R | format: txt
+from: B03_check_### S03_check_### R03_check_###
+date:
+V1-V6 per check:
+open 0s (what/where/who): (req if 0)
+options (ranked, 1 = GO): (opt)
+A decision: GO|NO|RE|FW, date:
+---
+
+H99_kore_001
+owner: H | write: H | read: A | format: txt
+current: (opt)
+proposed: (opt)
+justification: (opt)
+A decision: GO|NO, date:
+---
+
