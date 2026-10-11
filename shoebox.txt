@@ -1,4 +1,4 @@
-SHOEBOX v0.96
+SHOEBOX v0.97
 SHORTHANDS:
 X = {BSR|H}: Build Ship Run | Helm
 Y = {PDC}: Plan>Do>Check
@@ -39,16 +39,22 @@ S0 plan | S1 do | S2 check
 R0 plan | R1 do | R2 check
 H0 helm
 
-ARTIFACTS (XY_a, long: XY_artifact):
+REPORTS (XY_r, long: XY_report):
 A_kernel (A_k) A_start (A_s)
 H_shell H_kore (H_k) H_start (H_s) HH_check (H_c)
 B_start BP_plan BD_do BC_check
 S_start SP_plan SD_do SC_check
 R_start RP_plan RD_do RC_check
-| Artifact versioning: X##_function_###_label (label optional)
+| Report versioning: X##_function_###_label (label optional)
+| One file may hold many reports, each entry: owner, step, version, date
 | XY_check includes fields & verdicts, preferred option for GO
 | A_kernel (strategic), H_shell (operational) integrity anchors
 | H_kore: H's kernel update request (kernel exclusive to A)
+
+COMMUNICATION:
+Reports formal | messages informal; both owned by leading letter
+Artifacts unowned work products (e.g. guideline, baseline, audit trail)
+| Audit trail: top-append-only, attributes who wrote what
 
 REPORTING (X = BSR):
 Lead: A >A_s> H >H_s> X >X_c> H >H_c> A
