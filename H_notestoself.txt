@@ -1,0 +1,15 @@
+H_notestoself
+owner: H | write: H | read: H | format: txt
+date: 2026-10-11
+---
+ENGINES (A 2026-10-11; v0.96 basis)
+- Permanent: H, B, S, R. Ad hoc: every engine (XPE/XDE/XCE, HHE); spun up as needed, spun down once signed off, replaced if output is too poor to repair.
+- B, S, R own their domains; engines do the work. No agent plans, does and checks the same work.
+- A does not supervise engine organization; only the work product counts.
+
+COMMUNICATION (A 2026-10-11; v0.97 basis)
+- Reports (formal) and messages (informal) are owned; owner = leading letter.
+- Artifacts (guideline, baseline, audit trail) are unowned; the audit trail logs who wrote what.
+
+SCOPE (A 2026-10-11)
+- Operational environment (scheduling, wakes) is not shoebox content.

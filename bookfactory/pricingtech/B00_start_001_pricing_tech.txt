@@ -1,0 +1,21 @@
+B00_start_001_pricing_tech
+owner: B | write: B | read: H R | format: txt
+date: 2026-10-10
+from: H00_start_001_pricing_tech
+rulebook: /home/box/shoebox/SHOEBOX_v0.95.txt
+seeds: /home/box/shoebox/SHOEBOX_seeds_v0.95.txt
+workpiece: Pricing Tech (no period)
+unit: whole project manuscript; one versioned, dated BD_do file (B02_do_###_manuscript.txt), revised in place by version bump, not split into per-unit files
+inputs (A-supplied, FIXED, invariant; read in place, not copied):
+  guideline  /home/box/archive/shoebox_2026-10-10/artifacts/Pricing_Tech_guideline_FIXED.md
+  register   /home/box/archive/shoebox_2026-10-10/book_factory/structure/REGISTER_FIXED.md
+  diction    /home/box/archive/shoebox_2026-10-10/book_factory/structure/TITLE_DICTION_FIXED.md
+  factcheck  /home/box/archive/shoebox_2026-10-10/book_factory/structure/FACTCHECK_PROTOCOL_FIXED.md
+prior work (reference only, not FIXED, not inherited as GO):
+  /home/box/archive/shoebox_2026-10-10/book_factory/continuous/U001–U022 (book, part, chapter intros)
+  /home/box/archive/shoebox_2026-10-10/book_factory/structure/section_titles_proposal_002.md (72 titles)
+  /home/box/archive/shoebox_2026-10-10/book_factory/structure/outlines/{part_outlines_002, chapter_outlines_001}.md
+output: B01_plan_001_pricing_tech.txt, then (after H check of plan vs start) B02_do_001_manuscript.txt, then B03_check_001
+held with A (B does not act): FC placement, A_kernel, Chapter 1 hold
+rules acknowledged: .txt only; B prefix on every B file; no B note files outside the canonical file per step; no-stall (unknown = research); nothing ships without A GO; B never updates A_kernel
+---

@@ -1,0 +1,61 @@
+pricingtech_guideline | artifact (unowned) | DRAFT v002 pending A GO | date 2026-10-11 | sources: Pricing_Tech_guideline_FIXED.md (A 2026-09-15), REGISTER_FIXED.md (A 2026-09-15), TITLE_DICTION_FIXED.md (A 2026-09-15), FACTCHECK_PROTOCOL_FIXED.md (A GO 2026-09-25), A structure grid (A FIXED 2026-10-11); provisional run decisions from H01_check_009
+---
+TITLE      Pricing Tech | subtitle: Strategy, Policy, Engine, from Startup to Scale.
+           OPEN for A: TITLE_DICTION writes "Pricing Tech." and "Pricing / Pricing Tech."; REGISTER forbids the period ("Tech" is a term). Run follows REGISTER.
+AUTHOR     Oliver Beige, PhD-level economist, game theorist and industrial engineer; startup, enterprise and academic expertise.
+
+AUDIENCE   Founders of technology startups. Assumed: formal modeling in engineering contexts; economics at "Information Rules" level; scepticism toward academic economics for startups. Not assumed: empirical and econometric methods.
+
+GOAL       Bridge academic economic analysis and founder reality: rigorous economic reasoning behind pricing decisions without the data richness academic models assume. Sophistication above MBA/SV; introduce and explain the formal methods used at each stage, stop short of full formal treatment, point to external sources.
+           Core topic: production of digital goods; link traditional production economy to the digital economy of information and attention goods.
+
+STRUCTURE  Book intro; Parts I Strategy, II Policy, III Engine; epilogue. Book, each part and each chapter open with an intro.
+           Structure: A FIXED 2026-10-11 (governs; repeated titles are A's choice):
+           I STRATEGY
+           1 Foundations: Coordination, Information, Valuation, Error
+           2 Principles: Scarcity, Asymmetry, Incentives, Constraints
+           3 Value: Types, Chains, Measurement, Drift
+           4 Interaction: Games, Signals, Networks, Failure
+           5 Uncertainty: Unknowns, Updating, Irreversibility, Options
+           6 Behavior: Bounds, Organizations, Heuristics, Habits
+           II POLICY
+           7 Optimization: Objectives, Functions, Tradeoffs, Misuse
+           8 Governance: Authority, Accountability, Delegation, Constraint
+           9 Segmentation: Structure, Signals, Fences, Failure
+           10 Differentiation: Forms, Versions, Bundles, Complexity
+           11 Competition: Frames, Dynamics, Entry, Avoidance
+           12 Learning: Experiments, Memory, Feedback, Breakdown
+           III ENGINE
+           13 Bootstrapping: Transition, Instrumentation, Initiation, Contingency
+           14 Dynamics: Timing, Stability, Segments, Paths
+           15 Portfolio: Interaction, Subsidy, Capacity, Control
+           16 Intelligence: Inference, Models, Simulation, Oversight
+           17 Scaling: Growth, Governance, Containment, Freeze
+           18 Enterprise: Maturity, Configuration, Memory, Limits
+           4 sections per chapter (72); 2-4 subsections per section, headers only, not numbered; subsection ~1 page (300 words). Numbering 1.1-18.4 is navigation only.
+           Title diction: book 1-2 words; part and chapter one word; section one or two words. Forbidden: MBA/SV headline sprawl, subtitle-length or full-sentence titles.
+           Format: serialized newsletter, four per week, one section each, 600-1200 words, 1-2 illustrations; avoid footnotes.
+
+CONTENT    Arc: founder-led pricing (I Strategy: economic reasoning behind standard startup models, e.g. freemium, early bird) > formal policy under human control (II Policy) > autonomous pricing in the enterprise (III Engine).
+           End product: a pricing engine, a function that takes environmental variables, simulates and tests pricing strategies, forms and tests conjectures about consumer and competitor behavior, segments the market, respects firm-policy and regulatory constraints, and outputs a real-time price vector plus pointers for evolving the portfolio.
+           Constraints on purely selfish optimization are framed as integrity (value-chain integrity), not ethics: efficiency (all resources put to best use) and accountability (contributions traceable to contributors; the effort reflects their value) across a multi-step, multi-location, multi-contributor chain.
+           Bounded rationality via the Carnegie School (Simon, Cyert, March, Williamson); behavioralism kept to the necessary minimum; machine learning as proxy for organizational learning and decision making.
+           Bookshelf: Tirole, Cabral, Bain (IO); Fudenberg & Tirole, Myerson, Tadelis (game theory); Bolton & Dewatripont; Simon; March & Simon; Williamson; Penrose; Angrist & Pischke; Armstrong; Shapiro & Varian.
+
+CONTINUITY Explicit boundaries and cross-references to other chapters, by name; each intro stands alone.
+           OPEN for A (candidate, run): integrity sentence, "Integrity, in the sense Value defined and Governance extended, holds when the resources a price structure consumes are directed to productive purposes, when contributions to the value it produces can be traced to those who made them, and when the firm's stated policy and its realized practice agree." Proposed use: full once per Part, short form after 8.4, any list gives all three conditions. Note: adds a third condition (policy-practice agreement) to A's two-part definition.
+           Provisional (run): economics terms in modern usage, with a one-line note in text where it departs from the original author.
+
+TONE       American English; third person. Diction of Simon and Arrow: lucid, dense; argue, define, proceed. Rigorous but accessible; minimal formal notation; equations sparingly, the point must survive skipping them. Fictional and real examples encouraged.
+           Above MBA level without academic or SV jargon. Evidence and distinctions over cadence and applause; thin-data honesty without performance humility.
+           Forbidden unless A restores: stacked applause anaphora ("It is not X. It is Y."); motivational destination closers; throat-clearing ("Signature situations recur:", "A simple test helps.", "The leave-with is practical."); coach-voice drumbeat ("the firm must"); empty intensifiers (non-negotiable, load-bearing, harder than it sounds, narrower and harder); slogan-plus-CTA paragraphs; unearned rhetorical question stacks; emoji, hashtags, thread energy, founder-bro jargon.
+           Illustrations purely illustrative; text carries every concept.
+
+EVIDENCE   Factcheck per FACTCHECK_PROTOCOL_FIXED: text > Lector splits into ~300-word segments > 2-5 independent factcheckers split into claims and adjudicate > Editor consolidates > Author applies corrections. Order: self-check (band, REGISTER) > factcheck > continuity check > promote.
+           Verdicts: Ascertained | Contested | Unresolved | Interpretative; Unresolved/Interpretative also Plausible|Implausible.
+           Gates: Contested without A override blocks; Unresolved and Interpretative(Implausible) flag, block only if Editor or H marks block; Ascertained and Interpretative(Plausible) pass; no checkable claims = N/A with one-line reason. Contested outranks Unresolved. A rules Contested overrides and has discretion on interpretation.
+           Quotes verbatim (scholarly ellipses/brackets allowed), else indirect paraphrase; identified sources usually supersede Unresolved; never overstate confidence.
+           All GOs (editorial and factcheck) provisional until final proof; final proof is hard lock.
+           OPEN for A: run used three research passes by one agent as F1-F3; protocol and A 2026-10-11 require independent factcheckers.
+---
+changelog: v002 2026-10-11 H: STRUCTURE replaced by A grid (A FIXED 2026-10-11); proposal_002 pointer removed; duplicate-titles OPEN closed (A's grid governs).

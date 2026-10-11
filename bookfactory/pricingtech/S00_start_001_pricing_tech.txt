@@ -1,0 +1,20 @@
+S00_start_001_pricing_tech
+owner: S | write: S | read: H | format: txt
+date: 2026-10-10
+from: H00_start_001_pricing_tech
+rulebook: /home/box/shoebox/SHOEBOX_v0.95.txt
+seeds: /home/box/shoebox/SHOEBOX_seeds_v0.95.txt
+workpiece: Pricing Tech (no period)
+source manuscript: latest B02_do_###_manuscript.txt (currently B02_do_002_manuscript.txt, 22 intros); any pack is built from the latest version at build time, never an older one
+unit: whole project; one versioned, dated file per S step (S01 SP_plan, S02 SD_do, S03 SC_check), revised by version bump
+inputs (A-supplied, FIXED, invariant; read in place, not copied):
+  guideline  /home/box/archive/shoebox_2026-10-10/artifacts/Pricing_Tech_guideline_FIXED.md
+  register   /home/box/archive/shoebox_2026-10-10/book_factory/structure/REGISTER_FIXED.md
+  diction    /home/box/archive/shoebox_2026-10-10/book_factory/structure/TITLE_DICTION_FIXED.md
+prior work (reference only, not FIXED, not inherited as GO):
+  /home/box/archive/shoebox_2026-10-10/book_factory/sell/ (U001–U022 packs)
+output (on H GO only): S01_plan_001_pricing_tech.txt, then S02_do_001, then S03_check_001
+status: start only; no plan, no pack; nothing serialized or sent
+held with A (S does not act): FC placement, A_kernel, Chapter 1 hold; any publish or disseminate
+rules acknowledged: .txt only; S prefix on every S file; no S note files outside the canonical file per step; no-stall (unknown = research); nothing ships without A GO; S never writes manuscript or updates A_kernel
+---

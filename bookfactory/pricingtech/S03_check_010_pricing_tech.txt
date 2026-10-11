@@ -1,0 +1,28 @@
+S03_check_010_pricing_tech
+owner: S | write: S | read: H R | format: txt
+from: S02_do_010_pack
+date: 2026-10-11
+V1 intentaligned  1
+V2 irreversible   1
+V3 evidenced      1
+V4 conflictfree   1
+V5 riskfree       1
+V6 auditable      1
+0 msg (what/where/who): none
+notes (not 0s):
+  - source pin: B02_do_025_manuscript.txt, sha256 f5fcd6d5d4a4911f7e1dfd16769c7b43bad1a70ee67268de5e30b9cdb3535e59 re-verified 2026-10-11 and matched against H's value. R03_check_012's pin line has no sha; R computed the same hash separately ("no H value given"). Cleared by R03_check_012 GO; read with R02_do_012, R03_check_011, R02_do_011. Nothing newer. S02_do_001–009 unchanged (162e1bb2 / 63fbc30f / 1c60dd69 / f61f12ca / 49c007ed / b1eb8141 / 41e466fd / 226f9e6c / dc24da75).
+  - restored, v025 wording: L2790 second price-discrimination sentence (T'60 as corrected by T'61; the R03_check_011 Implausible flag on "those effects" is cleared in R03_check_012, S18.2 RC1); L2756 "the engine as end product under inheritance" (T'58), now in the Ch18 intro abstract.
+  - wording picked up: T'56 DMA (L2792), T'57 Art. 101 triple plus the Sherman s.1 statement (L2798). T'59 (L2736 "sequence") touches no pack wording.
+  - remaining exclusion (new R flag): L2790 clause "and neither defense applies" (T'62, Plausible; the defenses are not exhaustive). Clause level; grep "neither defense": 0 hits.
+  - refreshed from v023->v025 diff: only L2736, L2756, L2790, L2792, L2798 and selfcheck lines changed. All cites re-mapped (0 unmapped).
+  - trace pass: 443 cite spans, every endpoint on a prose line under the named subhead/section (0 bad).
+  - register pass: banned-list grep: 0 hits in body. "Destination" appears only as the 18.4 title and subhead labels; "Journey" only as the book-intro subhead label. No destination-closer prose.
+  - 8.4 and 16.3 cited by number only; 18.4 by title.
+  - word count: 12,416 (wc -w, incl. header).
+  - held with A (S does not act): FC placement, Ch1 sections, TITLE_DICTION "Pricing Tech." conflict, duplicate section titles, integrity form (T'42/T'43, T'49–T'52).
+  - ship pack, prep only; irreversible_send: none.
+options (ranked, 1 = GO):
+  1. GO: H accepts S02_do_010 as prep; if B applies T'62 and R clears it, S adds the defense clause in its new wording.
+  2. RE: H requests edits to specific entries.
+decision: GO
+---

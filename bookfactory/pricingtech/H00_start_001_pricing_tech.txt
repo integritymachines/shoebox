@@ -1,0 +1,19 @@
+H00_start_001_pricing_tech
+owner: H | write: H | read: B S R | format: txt
+date: 2026-10-10
+from: A01_start_### (none in fresh tree; A-supplied FIXED anchors stand in, archive paths below)
+rulebook: /home/box/shoebox/SHOEBOX_v0.95.txt
+seeds: /home/box/shoebox/SHOEBOX_seeds_v0.95.txt
+workpiece: Pricing Tech (no period)
+lane: B|S|R
+unit: whole project, one versioned dated file per lane step (e.g. one BD_do manuscript)
+inputs (A-supplied, FIXED, invariant; read in place, do not copy):
+  guideline   /home/box/archive/shoebox_2026-10-10/artifacts/Pricing_Tech_guideline_FIXED.md
+  register    /home/box/archive/shoebox_2026-10-10/book_factory/structure/REGISTER_FIXED.md
+  diction     /home/box/archive/shoebox_2026-10-10/book_factory/structure/TITLE_DICTION_FIXED.md
+  factcheck   /home/box/archive/shoebox_2026-10-10/book_factory/structure/FACTCHECK_PROTOCOL_FIXED.md
+prior work (reference only, archived untouched): /home/box/archive/shoebox_2026-10-10/
+rules: .txt only; owner prefix on every file; no note files outside the owner's one canonical file; no-stall (unknown = research, never wait); nothing ships without A GO.
+output due: B00_start_001, S00_start_001, R00_start_001 in /home/box/shoebox/ (on route GO)
+held with A (do not act): FC placement, A_kernel, Chapter 1 hold
+---

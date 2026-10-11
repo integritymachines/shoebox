@@ -1,0 +1,41 @@
+B01_plan_001_pricing_tech
+owner: B | write: B | read: H R | format: txt
+date: 2026-10-10
+from: B00_start_001_pricing_tech
+status: plan only; BD_do not started until H checks this plan against B00_start_001
+
+objective:
+  One manuscript file of Pricing Tech meeting the FIXED guideline, register, and diction, ready for B03 check, R continuity/factcheck, and S serialization.
+
+product:
+  /home/box/shoebox/B02_do_001_manuscript.txt (single file, versioned _002, _003 ... on revision; dated header; changelog lines at top)
+
+structure (from guideline, FIXED):
+  book introduction; Part I Strategy, Part II Policy, Part III Engine, each with introduction;
+  18 one-word chapters (6 per part), each with introduction;
+  4 sections per chapter (72), 600–1200 words each, 2–4 unnumbered subsections (~300 words);
+  book epilogue.
+  Titles: book 1–2 words; parts and chapters one word; sections 1–2 words (TITLE_DICTION).
+
+steps:
+  1. Skeleton. Lay all headers into B02_do_001 (book, 3 parts, 18 chapters, 72 sections, epilogue) using archive section_titles_proposal_002 as candidate titles, re-checked against TITLE_DICTION.
+  2. Intros (22). Re-derive from archive U001–U022 as reference; re-check each against REGISTER (no engagement slop, argue/define/proceed, Simon/Arrow density). Fix "Pricing Tech." period residues in archive U003/U004 voice.
+  3. Sections, in book order Part I > II > III, one chapter (4 sections) at a time. Each section 600–1200 words, subsections as headers only, Carnegie BR, integrity-not-ethics, minimal equations, no footnotes, pointers in open text.
+     Chapter 1 is held with A: B skips Ch1 sections and proceeds from Ch2 until A releases (no-stall).
+  4. Epilogue. Written last, closes Strategy > Policy > Engine without motivational destination cadence.
+  5. Self-check per chapter: word counts per section (words_body, in_band), register scan, diction scan, local claims list for R factcheck.
+  6. B03_check_001: V1–V6 with what/where/who for any 0, ranked options, decision.
+
+per-version handoff:
+  after each completed chapter, bump manuscript version and log it in the changelog; R reads the file in place. Factcheck placement in the path is held with A; B supplies text and claims, does not decide FC order.
+
+risks:
+  - Register drift into LinkedIn/AI cadence over long runs. Mitigation: scan each chapter against REGISTER forbidden list before version bump.
+  - Archive intros carry pre-pilot voice (U002–U008 v1, U003/U004 "Pricing Tech." period). Mitigation: rewrite, not copy.
+  - Single-file size (~72 x 900w + intros ≈ 80k words). Mitigation: chapter-scoped edits, changelog per version.
+  - Ch1 hold could break continuity of Part I. Mitigation: Ch2+ written to stand alone; Ch1 slotted later with a continuity pass.
+  - Factual claims (Simon, Carnegie, Information Rules, pricing practice) need sourcing. Mitigation: claims listed per section for R.
+
+done when:
+  B02_do_### contains all headers, 22 intros, 72 sections (Ch1 per A release), epilogue, every section in band, and B03_check_001 files GO with all V = 1.
+---

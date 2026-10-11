@@ -1,0 +1,57 @@
+R01_plan_001_pricing_tech
+owner: R | write: R | read: H R | format: txt
+date: 2026-10-10
+from: R00_start_001_pricing_tech
+status: plan only; RD_do not started until H checks this plan against R00_start_001
+
+objective:
+  One project-wide continuity and factcheck pass (Lector + Editor) on the latest Builder BD_do, returning per-unit FC and RC results and a single R03 check to H. R does not write or edit prose; corrections go back to B through H.
+
+input (read in place, not copied):
+  manuscript  /home/box/shoebox/B02_do_002_manuscript.txt (22 intros; latest B02_do at plan date; if B bumps the version before RD_do, R reads the newest B02_do_### and records which version in R02_do_001)
+  FIXED       guideline, REGISTER, TITLE_DICTION, FACTCHECK_PROTOCOL (paths per R00_start_001)
+  reference   /home/box/archive/shoebox_2026-10-10/book_factory/R_continuity_checklist_001.md and prior RC/FC checks (reference only, not inherited as GO)
+
+segmentation:
+  unit = one intro in manuscript order: book intro, Part I–III intros, Ch1–Ch18 intros (22 units), cited by manuscript header and line range.
+  Lector splits each unit into self-contained segments S of ~300 words (subsection boundaries preferred); each S carries its unit id and line range.
+  Sections, epilogue, and Ch1 sections are not in scope until B delivers them in a later B02_do (Ch1 hold stays with A).
+
+checks:
+  1. Continuity C1–C10 per unit, scored 1|0 (v0.95 carries the archive checklist; no v0.95 replacement exists):
+     C1 structure_slot | C2 goal_alignment | C3 audience_fit | C4 diction | C5 integrity_frame | C6 rationality_frame | C7 form | C8 claim_consistency | C9 bookshelf_hygiene | C10 version_graph
+     plus cross-unit continuity: chapter-to-chapter hand-offs, part arcs, title consistency ("Pricing Tech" never with trailing period), no contradictions between intros.
+  2. Factcheck per FACTCHECK_PROTOCOL_FIXED:
+     Lector (R): split T into S; select 2–5 researching Fs; hand each F its S set.
+     Fs: split S into exhaustive claims C; adjudicate each as Ascertained | Contested | Unresolved | Interpretative (Plausible|Implausible) with justification, sources, correction; re-check Contested/Unresolved individually; return V# to Editor.
+     Editor (R): consolidate V1–VN into one Report per unit, resolve conflicting verdicts, set FC per unit.
+     Panel size: 3 Fs default; 2 for short low-claim units; up to 5 for claim-dense units (named scholars, quotes, dates, market facts).
+
+carried note:
+  Boundary sentences added in carried intros Ch11, Ch12, Ch14, Ch15, Ch17 need factcheck. Each is its own S (or flagged within its S) so every F panel adjudicates it explicitly.
+
+gate rules (FIXED, from FACTCHECK_PROTOCOL):
+  Contested without Architect override -> FC=0 -> blocks RC and promote for that unit; escalates via H only.
+  Unresolved or Interpretative(Implausible) -> flagged; blocks only if Editor or H marks block.
+  Ascertained, Interpretative(Plausible) -> pass.
+  Unit with no checkable factual claims -> FC=N/A with one-line justification; RC may proceed.
+  RC runs per unit only after FC=1 or N/A (or Architect override); RC=1 needs all C1–C10 = 1.
+  Quotes verbatim; no overstated confidence; all GOs provisional until final proof.
+
+FC order/placement: held with A. R does not set it; this plan runs FC before RC per unit only as the protocol's existing per-unit gate and changes nothing until A decides.
+
+outputs:
+  /home/box/shoebox/R02_do_001_pricing_tech.txt   per-unit segments, F panel, Report summary, FC (1|0|N/A), C1–C10, RC, corrections list for B (via H)
+  /home/box/shoebox/R03_check_001_pricing_tech.txt   V1–V6 with what/where/who for any 0, ranked options, decision GO|NO|RE|FW, to H
+
+communication: all through H; never A directly; no messages to B or S directly. R sends only its check to H.
+
+risks:
+  - Manuscript version moves during RD_do. Mitigation: pin version in R02_do header; re-run only changed units.
+  - F panel hallucinated sources. Mitigation: Editor requires identifiable sources; C9 bookshelf hygiene.
+  - Contested claim stalls a unit. Mitigation: block that unit only, continue others (no-stall), escalate via H.
+  - Boundary additions drift from chapter scope. Mitigation: C8 claim_consistency against neighboring intros.
+
+done when:
+  all 22 units have FC (1|0|N/A) and RC recorded in R02_do_001, and R03_check_001 is filed to H with V1–V6.
+---

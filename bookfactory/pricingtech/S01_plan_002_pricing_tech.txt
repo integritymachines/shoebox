@@ -1,0 +1,45 @@
+S01_plan_002_pricing_tech
+owner: S | write: S | read: H R | format: txt
+date: 2026-10-10
+from: S00_start_001_pricing_tech
+source: latest B02_do_###_manuscript.txt version cleared by R with an R03_check GO (none cleared yet; B02_do_002 is latest B, not R-cleared)
+version: 002 | date: 2026-10-10
+changelog:
+  001 2026-10-10 initial plan
+  002 2026-10-10 H RE: source = latest R03_check-GO B02_do (not latest B); S02 header records B version + R check; "sell pack" renamed "ship pack"
+status: plan only; SD_do not started until R has cleared a B02_do version (R03_check GO) and H has checked this plan
+
+objective:
+  One project-wide ship pack for Pricing Tech, distilled only from the latest R-cleared (R03_check GO) B02_do manuscript, ready for S03 check. Prep only; nothing serialized, published or sent without A GO.
+
+product:
+  /home/box/shoebox/S02_do_001_pack.txt (single file, versioned _002, _003 ... on revision; dated header; changelog at top; header records source B02_do version and the R03_check file and decision that cleared it)
+
+pack contents (per filled unit in source, book order):
+  book: blurb (2 short paragraphs), one-paragraph abstract
+  parts I–III: abstract each
+  chapters 1–18: abstract per intro; talk-track teaser (cue + 2 points) framed as oral/newsletter draft
+  sections: added only once B fills them, by version bump; none at 002
+  every claim cites a manuscript location (part/chapter/heading); no claim beyond the text
+
+steps:
+  1. Find the highest B02_do version with an R03_check GO; skip any newer uncleared version. Record both B version and R03_check path in the S02 header.
+  2. Distill book and part intros (4).
+  3. Distill chapter intros 1–18 (18) in book order. Ch1 is distilled from its intro only (Ch1 sections held with A).
+  4. Register pass against REGISTER_FIXED and TITLE_DICTION_FIXED: title Pricing Tech (no period); no engagement slop (anaphora stacks, applause or destination closers, coach voice, "non-negotiable"/"load-bearing" as spice).
+  5. Trace pass: each pack line maps to a manuscript heading; drop anything not in the text.
+  6. S03_check_001: V1–V6, with what/where/who for any 0.
+
+per-version handoff:
+  When R clears a newer B02_do (R03_check GO), S rebuilds affected entries from the new version and bumps S02_do. Archive packs (/home/box/archive/shoebox_2026-10-10/book_factory/sell/) are reference only; no text is copied unless re-verified against the current manuscript.
+
+risks:
+  - Stale or unchecked source (U008 precedent): pack built off an older or R-uncleared B02_do. Mitigation: step 1 plus B version + R03_check stamp in header.
+  - Archive pre-pilot voice leaking in. Mitigation: distill fresh, then run the register pass.
+  - Overclaiming beyond intros while sections are empty. Mitigation: abstracts scope to intro text only.
+  - Ship drift: a teaser read as ready to send. Mitigation: every track marked draft; irreversible_send none.
+
+held with A (S does not act): FC placement, A_kernel, Chapter 1 hold, any publish or disseminate
+
+done when:
+  S02_do_### covers all 22 intros from the latest R-cleared B02_do, passes the register and trace passes, and S03_check_001 files with all V = 1.

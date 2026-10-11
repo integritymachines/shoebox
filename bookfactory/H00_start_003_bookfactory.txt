@@ -1,0 +1,30 @@
+H00_start_003_bookfactory
+owner: H | write: H | read: B S R | format: txt
+date: 2026-10-11
+from: A01_start_### (none yet; A FIXED anchors stand in)
+changelog: 003 FILES updated to bookfactory/<book> layout, A_START line added (2026-10-11); 003 rewritten on A frame (parts, stages, documents, engines, parsimony); 002 archived
+---
+PRINCIPLE  parsimony: minimal files, version control, attribution; every expression irreducible.
+
+PARTS      research > draft > write > audit
+
+STAGES     1 guideline   internal; governs writing: structure, content, continuity, tone, audience, evidence
+           2 baseline    first publishable version, for the established target audience
+           3 variants    deployable versions built on guideline + baseline
+
+DOCUMENTS  guideline | baseline | audit report (confirms every element checked and adhered to)
+
+LANES      B  guideline draft (stage 1), baseline (stage 2)
+           R  audit: continuity + factcheck against guideline; owns audit report
+           S  variants (stage 3), from audited baseline only; ships on A GO only
+           H  routes, checks plan vs start, reports to A; A decides
+
+ENGINES    BPE research    BDE draft, write    BCE self-check
+           RPE scope       RDE Lector, F1-Fn (independent), Editor    RCE audit report
+           SPE variant plan  SDE variant build   SCE variant check
+
+FILES      shoebox/: SHOEBOX rulebook + seeds, H_notestoself
+           bookfactory/: this start (repeatable for any book)
+           bookfactory/<book>/: <book>_guideline, <book>_baseline, <book>_audit (unowned artifacts, versioned in place;
+           audit top-append-only, each entry dated and attributed) + latest lane reports only; superseded to archive
+A_START    anything from 'write a book about X' to a full guideline; H fills the blanks
